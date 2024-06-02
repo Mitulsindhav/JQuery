@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Second Quetion </title>
+
+   <style>
+    .box1{
+        padding: 10px;
+        border: 2px solid black;
+    }
+    #btn1{
+        padding: 10px;
+        margin: 10px;
+        
+
+    }
+    .box2{
+        padding: 10px;
+        border: 2px solid black;
+    }
+    #Add{
+        padding: 5px;
+        margin-top: 10px;
+
+    }
+    #Remove{
+        padding: 5px;
+        margin-top: 10px;
+
+    }
+    #Toggle{
+        padding: 5px;
+        margin-top: 10px;
+
+    }
+    .first{
+        
+        background-color: brown;
+        color: white;
+    }
+    .second{
+        
+        background-color: aqua;
+    }
+    
+   </style>
+
+</head>
+<body>
+    
+    <h2> Apply CSS Using JQuery</h2>
+    <div class="box1">
+
+        <h2> Text Box </h2>
+
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem optio voluptas consequatur excepturi est cumque commodi corporis vel facilis, deserunt pariatur debitis assumenda velit, voluptates eos, quia dolorem accusantium? Ullam?</p>
+
+    </div>
+
+    <button id="btn1"> Add Style </button>
+
+    <script src="jquery-3.7.1.js"></script>
+     
+       
+    <script>
+        // Apply CSS Using JQuery
+        $(document).ready(function(){
+
+            $('#btn1').click(function(){
+               
+                $('.box1').css("background","pink")
+
+            
+            })
+        });
+    </script>
+
+    
+    <h2> Add Class and Remove Class in Jquery </h2>
+
+    <div class="box2">
+
+        <h2> Text Box </h2>
+
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem optio voluptas consequatur excepturi est cumque commodi corporis vel facilis, deserunt pariatur debitis assumenda velit, voluptates eos, quia dolorem accusantium? Ullam?</p>
+
+    </div>
+
+    <button id="Add"> Addclass </button>
+    <button id="Remove"> Removeclass </button>
+    <button id="Toggle"> Toggleclass </button>
+    
+
+    <script src="jquery-3.7.1.js"></script>
+
+    <script>
+
+        $('#Add').click(function(){
+
+            $('.box2').addClass("first");
+
+        });
+        $('#Remove').click(function(){
+
+            $('.box2').removeClass("second");
+
+        });
+        $('#Toggle').click(function(){
+
+            $('.box2').toggleClass("first");
+
+        });
+    </script>
+     
+       
+       
+</body>
+</html>
